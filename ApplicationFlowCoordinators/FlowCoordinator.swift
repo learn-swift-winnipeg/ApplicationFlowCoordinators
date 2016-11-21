@@ -1,0 +1,3 @@
+protocol FlowCoordinator {
+    func start()
+}

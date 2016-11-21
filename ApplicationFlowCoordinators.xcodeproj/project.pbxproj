@@ -7,21 +7,61 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0012AF6A1DF4F37D007169F1 /* UIViewController+PresentAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0012AF691DF4F37D007169F1 /* UIViewController+PresentAlert.swift */; };
 		001902A51DE2B0CA00145E03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001902A41DE2B0CA00145E03 /* AppDelegate.swift */; };
-		001902A71DE2B0CA00145E03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001902A61DE2B0CA00145E03 /* ViewController.swift */; };
-		001902AA1DE2B0CA00145E03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 001902A81DE2B0CA00145E03 /* Main.storyboard */; };
 		001902AC1DE2B0CA00145E03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 001902AB1DE2B0CA00145E03 /* Assets.xcassets */; };
 		001902AF1DE2B0CA00145E03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 001902AD1DE2B0CA00145E03 /* LaunchScreen.storyboard */; };
+		001902C01DE2C9BA00145E03 /* AppFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001902BF1DE2C9BA00145E03 /* AppFlowCoordinator.swift */; };
+		001902C21DE2CA2700145E03 /* FlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001902C11DE2CA2700145E03 /* FlowCoordinator.swift */; };
+		001902C51DE2CA8B00145E03 /* AuthFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001902C41DE2CA8B00145E03 /* AuthFlowCoordinator.swift */; };
+		001902C81DE2CAD000145E03 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001902C61DE2CAD000145E03 /* SignInVC.swift */; };
+		001902C91DE2CAD000145E03 /* SignInVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 001902C71DE2CAD000145E03 /* SignInVC.xib */; };
+		001902CE1DE2D63400145E03 /* UpdatePasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001902CC1DE2D63400145E03 /* UpdatePasswordVC.swift */; };
+		001902CF1DE2D63400145E03 /* UpdatePasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 001902CD1DE2D63400145E03 /* UpdatePasswordVC.xib */; };
+		001902D81DE2EF6F00145E03 /* UpdateProfilePhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001902D61DE2EF6F00145E03 /* UpdateProfilePhotoVC.swift */; };
+		001902D91DE2EF6F00145E03 /* UpdateProfilePhotoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 001902D71DE2EF6F00145E03 /* UpdateProfilePhotoVC.xib */; };
+		001902DD1DE2F3C400145E03 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001902DB1DE2F3C400145E03 /* MainTabBarController.swift */; };
+		001902E01DE2F7A000145E03 /* FirstTabFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001902DF1DE2F7A000145E03 /* FirstTabFlowCoordinator.swift */; };
+		001902E31DE2F7D900145E03 /* MainTabBarFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001902E21DE2F7D900145E03 /* MainTabBarFlowCoordinator.swift */; };
+		001902E61DE2F88100145E03 /* FirstTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001902E41DE2F88100145E03 /* FirstTabVC.swift */; };
+		001902E71DE2F88100145E03 /* FirstTabVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 001902E51DE2F88100145E03 /* FirstTabVC.xib */; };
+		001902EA1DE2FDD500145E03 /* SecondTabFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001902E91DE2FDD500145E03 /* SecondTabFlowCoordinator.swift */; };
+		001902ED1DE2FE1100145E03 /* SecondTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001902EB1DE2FE1100145E03 /* SecondTabVC.swift */; };
+		001902EE1DE2FE1100145E03 /* SecondTabVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 001902EC1DE2FE1100145E03 /* SecondTabVC.xib */; };
+		001902F11DE2FF0E00145E03 /* UserAccountTabFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001902F01DE2FF0E00145E03 /* UserAccountTabFlowCoordinator.swift */; };
+		001902F41DE2FF2200145E03 /* UserAccountTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001902F21DE2FF2200145E03 /* UserAccountTabVC.swift */; };
+		001902F51DE2FF2200145E03 /* UserAccountTabVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 001902F31DE2FF2200145E03 /* UserAccountTabVC.xib */; };
+		00356B0F1DE94FD60026E306 /* UserAccountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00356B0E1DE94FD60026E306 /* UserAccountService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0012AF691DF4F37D007169F1 /* UIViewController+PresentAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+PresentAlert.swift"; sourceTree = "<group>"; };
 		001902A11DE2B0CA00145E03 /* ApplicationFlowCoordinators.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApplicationFlowCoordinators.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		001902A41DE2B0CA00145E03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		001902A61DE2B0CA00145E03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		001902A91DE2B0CA00145E03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		001902AB1DE2B0CA00145E03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		001902AE1DE2B0CA00145E03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		001902B01DE2B0CA00145E03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		001902BF1DE2C9BA00145E03 /* AppFlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppFlowCoordinator.swift; sourceTree = "<group>"; };
+		001902C11DE2CA2700145E03 /* FlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowCoordinator.swift; sourceTree = "<group>"; };
+		001902C41DE2CA8B00145E03 /* AuthFlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthFlowCoordinator.swift; sourceTree = "<group>"; };
+		001902C61DE2CAD000145E03 /* SignInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		001902C71DE2CAD000145E03 /* SignInVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignInVC.xib; sourceTree = "<group>"; };
+		001902CC1DE2D63400145E03 /* UpdatePasswordVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdatePasswordVC.swift; sourceTree = "<group>"; };
+		001902CD1DE2D63400145E03 /* UpdatePasswordVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UpdatePasswordVC.xib; sourceTree = "<group>"; };
+		001902D61DE2EF6F00145E03 /* UpdateProfilePhotoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateProfilePhotoVC.swift; sourceTree = "<group>"; };
+		001902D71DE2EF6F00145E03 /* UpdateProfilePhotoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UpdateProfilePhotoVC.xib; sourceTree = "<group>"; };
+		001902DB1DE2F3C400145E03 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		001902DF1DE2F7A000145E03 /* FirstTabFlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstTabFlowCoordinator.swift; sourceTree = "<group>"; };
+		001902E21DE2F7D900145E03 /* MainTabBarFlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarFlowCoordinator.swift; sourceTree = "<group>"; };
+		001902E41DE2F88100145E03 /* FirstTabVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstTabVC.swift; sourceTree = "<group>"; };
+		001902E51DE2F88100145E03 /* FirstTabVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstTabVC.xib; sourceTree = "<group>"; };
+		001902E91DE2FDD500145E03 /* SecondTabFlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondTabFlowCoordinator.swift; sourceTree = "<group>"; };
+		001902EB1DE2FE1100145E03 /* SecondTabVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondTabVC.swift; sourceTree = "<group>"; };
+		001902EC1DE2FE1100145E03 /* SecondTabVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondTabVC.xib; sourceTree = "<group>"; };
+		001902F01DE2FF0E00145E03 /* UserAccountTabFlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAccountTabFlowCoordinator.swift; sourceTree = "<group>"; };
+		001902F21DE2FF2200145E03 /* UserAccountTabVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAccountTabVC.swift; sourceTree = "<group>"; };
+		001902F31DE2FF2200145E03 /* UserAccountTabVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserAccountTabVC.xib; sourceTree = "<group>"; };
+		00356B0E1DE94FD60026E306 /* UserAccountService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAccountService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +94,114 @@
 		001902A31DE2B0CA00145E03 /* ApplicationFlowCoordinators */ = {
 			isa = PBXGroup;
 			children = (
-				001902A41DE2B0CA00145E03 /* AppDelegate.swift */,
-				001902A61DE2B0CA00145E03 /* ViewController.swift */,
-				001902A81DE2B0CA00145E03 /* Main.storyboard */,
+				001902B71DE2B4F000145E03 /* Application */,
+				001902C31DE2CA5E00145E03 /* Authentication Flow */,
+				001902DA1DE2F36A00145E03 /* Main TabBar Interface Flow */,
+				001902B61DE2B10200145E03 /* Not Related To Presentation */,
+			);
+			path = ApplicationFlowCoordinators;
+			sourceTree = "<group>";
+		};
+		001902B61DE2B10200145E03 /* Not Related To Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				00356B0E1DE94FD60026E306 /* UserAccountService.swift */,
+				0012AF691DF4F37D007169F1 /* UIViewController+PresentAlert.swift */,
 				001902AB1DE2B0CA00145E03 /* Assets.xcassets */,
 				001902AD1DE2B0CA00145E03 /* LaunchScreen.storyboard */,
 				001902B01DE2B0CA00145E03 /* Info.plist */,
 			);
-			path = ApplicationFlowCoordinators;
+			name = "Not Related To Presentation";
+			sourceTree = "<group>";
+		};
+		001902B71DE2B4F000145E03 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				001902A41DE2B0CA00145E03 /* AppDelegate.swift */,
+				001902BF1DE2C9BA00145E03 /* AppFlowCoordinator.swift */,
+				001902C11DE2CA2700145E03 /* FlowCoordinator.swift */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		001902C31DE2CA5E00145E03 /* Authentication Flow */ = {
+			isa = PBXGroup;
+			children = (
+				001902C41DE2CA8B00145E03 /* AuthFlowCoordinator.swift */,
+				001902CA1DE2CB1900145E03 /* Sign In */,
+				001902CB1DE2D5A500145E03 /* Update Password */,
+				001902D51DE2EF2300145E03 /* Update Profile Photo */,
+			);
+			name = "Authentication Flow";
+			sourceTree = "<group>";
+		};
+		001902CA1DE2CB1900145E03 /* Sign In */ = {
+			isa = PBXGroup;
+			children = (
+				001902C61DE2CAD000145E03 /* SignInVC.swift */,
+				001902C71DE2CAD000145E03 /* SignInVC.xib */,
+			);
+			name = "Sign In";
+			sourceTree = "<group>";
+		};
+		001902CB1DE2D5A500145E03 /* Update Password */ = {
+			isa = PBXGroup;
+			children = (
+				001902CC1DE2D63400145E03 /* UpdatePasswordVC.swift */,
+				001902CD1DE2D63400145E03 /* UpdatePasswordVC.xib */,
+			);
+			name = "Update Password";
+			sourceTree = "<group>";
+		};
+		001902D51DE2EF2300145E03 /* Update Profile Photo */ = {
+			isa = PBXGroup;
+			children = (
+				001902D61DE2EF6F00145E03 /* UpdateProfilePhotoVC.swift */,
+				001902D71DE2EF6F00145E03 /* UpdateProfilePhotoVC.xib */,
+			);
+			name = "Update Profile Photo";
+			sourceTree = "<group>";
+		};
+		001902DA1DE2F36A00145E03 /* Main TabBar Interface Flow */ = {
+			isa = PBXGroup;
+			children = (
+				001902E21DE2F7D900145E03 /* MainTabBarFlowCoordinator.swift */,
+				001902DB1DE2F3C400145E03 /* MainTabBarController.swift */,
+				001902E11DE2F7BE00145E03 /* First Tab */,
+				001902E81DE2FDBC00145E03 /* Second Tab */,
+				001902EF1DE2FEE600145E03 /* User Account Tab */,
+			);
+			name = "Main TabBar Interface Flow";
+			sourceTree = "<group>";
+		};
+		001902E11DE2F7BE00145E03 /* First Tab */ = {
+			isa = PBXGroup;
+			children = (
+				001902DF1DE2F7A000145E03 /* FirstTabFlowCoordinator.swift */,
+				001902E41DE2F88100145E03 /* FirstTabVC.swift */,
+				001902E51DE2F88100145E03 /* FirstTabVC.xib */,
+			);
+			name = "First Tab";
+			sourceTree = "<group>";
+		};
+		001902E81DE2FDBC00145E03 /* Second Tab */ = {
+			isa = PBXGroup;
+			children = (
+				001902E91DE2FDD500145E03 /* SecondTabFlowCoordinator.swift */,
+				001902EB1DE2FE1100145E03 /* SecondTabVC.swift */,
+				001902EC1DE2FE1100145E03 /* SecondTabVC.xib */,
+			);
+			name = "Second Tab";
+			sourceTree = "<group>";
+		};
+		001902EF1DE2FEE600145E03 /* User Account Tab */ = {
+			isa = PBXGroup;
+			children = (
+				001902F01DE2FF0E00145E03 /* UserAccountTabFlowCoordinator.swift */,
+				001902F21DE2FF2200145E03 /* UserAccountTabVC.swift */,
+				001902F31DE2FF2200145E03 /* UserAccountTabVC.xib */,
+			);
+			name = "User Account Tab";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,9 +264,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				001902F51DE2FF2200145E03 /* UserAccountTabVC.xib in Resources */,
+				001902D91DE2EF6F00145E03 /* UpdateProfilePhotoVC.xib in Resources */,
+				001902CF1DE2D63400145E03 /* UpdatePasswordVC.xib in Resources */,
 				001902AF1DE2B0CA00145E03 /* LaunchScreen.storyboard in Resources */,
+				001902EE1DE2FE1100145E03 /* SecondTabVC.xib in Resources */,
 				001902AC1DE2B0CA00145E03 /* Assets.xcassets in Resources */,
-				001902AA1DE2B0CA00145E03 /* Main.storyboard in Resources */,
+				001902C91DE2CAD000145E03 /* SignInVC.xib in Resources */,
+				001902E71DE2F88100145E03 /* FirstTabVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,22 +282,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				001902A71DE2B0CA00145E03 /* ViewController.swift in Sources */,
+				001902CE1DE2D63400145E03 /* UpdatePasswordVC.swift in Sources */,
+				001902C21DE2CA2700145E03 /* FlowCoordinator.swift in Sources */,
+				001902EA1DE2FDD500145E03 /* SecondTabFlowCoordinator.swift in Sources */,
+				00356B0F1DE94FD60026E306 /* UserAccountService.swift in Sources */,
+				0012AF6A1DF4F37D007169F1 /* UIViewController+PresentAlert.swift in Sources */,
+				001902DD1DE2F3C400145E03 /* MainTabBarController.swift in Sources */,
+				001902F11DE2FF0E00145E03 /* UserAccountTabFlowCoordinator.swift in Sources */,
+				001902C01DE2C9BA00145E03 /* AppFlowCoordinator.swift in Sources */,
+				001902F41DE2FF2200145E03 /* UserAccountTabVC.swift in Sources */,
+				001902D81DE2EF6F00145E03 /* UpdateProfilePhotoVC.swift in Sources */,
+				001902ED1DE2FE1100145E03 /* SecondTabVC.swift in Sources */,
 				001902A51DE2B0CA00145E03 /* AppDelegate.swift in Sources */,
+				001902E31DE2F7D900145E03 /* MainTabBarFlowCoordinator.swift in Sources */,
+				001902E61DE2F88100145E03 /* FirstTabVC.swift in Sources */,
+				001902C51DE2CA8B00145E03 /* AuthFlowCoordinator.swift in Sources */,
+				001902C81DE2CAD000145E03 /* SignInVC.swift in Sources */,
+				001902E01DE2F7A000145E03 /* FirstTabFlowCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		001902A81DE2B0CA00145E03 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				001902A91DE2B0CA00145E03 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		001902AD1DE2B0CA00145E03 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -300,6 +452,7 @@
 				001902B51DE2B0CA00145E03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
