@@ -45,6 +45,9 @@ class UserAccountTabFlowCoordinator: FlowCoordinator {
         let updatePasswordVC = UpdatePasswordVC()
         updatePasswordVC.delegate = self
         
+        let backItem = UIBarButtonItem(title: "Cancel", style: .plain, target: nil, action: nil)
+        navigationController.topViewController?.navigationItem.backBarButtonItem = backItem
+        
         navigationController.pushViewController(updatePasswordVC, animated: true)
     }
 }
