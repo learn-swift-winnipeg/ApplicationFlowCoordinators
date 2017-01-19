@@ -29,13 +29,17 @@ class AuthFlowCoordinator: FlowCoordinator {
     // MARK: - FlowCoordinator
     
     func start() {
+        showSignInVC()
+    }
+    
+    // MARK: - Navigation
+    
+    fileprivate func showSignInVC() {
         let signInVC = SignInVC()
         signInVC.delegate = self
         
         navigationController.pushViewController(signInVC, animated: false)
     }
-    
-    // MARK: - Navigation
     
     fileprivate func showUpdatePasswordVC() {
         let updatePasswordVC = UpdatePasswordVC()
@@ -53,6 +57,8 @@ class AuthFlowCoordinator: FlowCoordinator {
         self.navigationController.pushViewController(updateProfilePhotoVC, animated: true)
     }
 }
+
+// MARK: - SignInVCDelegate
 
 extension AuthFlowCoordinator: SignInVCDelegate {
     func signInVC(
@@ -79,6 +85,8 @@ extension AuthFlowCoordinator: SignInVCDelegate {
     }
 }
 
+// MARK: - UpdatePasswordVCDelegate
+
 extension AuthFlowCoordinator: UpdatePasswordVCDelegate {
     func updatePasswordVC(
         updatePasswordVC: UpdatePasswordVC,
@@ -96,6 +104,8 @@ extension AuthFlowCoordinator: UpdatePasswordVCDelegate {
         showUpdateProfilePhotoVC()
     }
 }
+
+// MARK: - UpdateProfilePhotoVCDelegate
 
 extension AuthFlowCoordinator: UpdateProfilePhotoVCDelegate {
     func didSuccessfullyUpdateProfilePhoto(from updateProfilePhotoVC: UpdateProfilePhotoVC) {
